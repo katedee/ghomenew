@@ -1,0 +1,386 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  min-height: 100%;
+  height: 100%;
+  background-color: #dfe9e6;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  color: #595959; }
+
+img {
+  max-width: 100%; }
+
+video {
+  width: 100%    !important;
+  height: auto   !important; }
+
+h3 {
+  font-size: 3.6rem;
+  font-weight: normal;
+  color: #be5523;
+  text-align: center;
+  margin: 0 3%; }
+
+.icon-right-open {
+  color: #be5523; }
+
+.wrapper {
+  width: 100%; }
+
+.main-bg {
+  width: 100%; }
+
+.button {
+  max-width: 141px;
+  height: 49px;
+  background-color: #be5523;
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 0.7rem; }
+
+.content {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1px; }
+
+.main-bg1, .main-bg6 {
+  background: -webkit-linear-gradient(rgba(168, 195, 187, 0.5), rgba(46, 77, 111, 0.5)), url("img/greenwave.png");
+  background-attachment: fixed; }
+
+.content1 {
+  padding: 2.5% 0 6% 0; }
+  .content1 h1 {
+    max-width: 355px;
+    width: 60%;
+    height: 100px;
+    margin: 0;
+    background: #256a55 url("img/logotext.png") no-repeat 40% center;
+    background-size: 83.5% auto;
+    text-indent: -9999px;
+    display: inline-block; }
+  .content1 h2 {
+    color: #fff;
+    background: #2e4d6f;
+    padding: 0 6% 0 3.3%;
+    margin: 0.6% auto 0 auto;
+    width: 72%;
+    text-transform: uppercase;
+    font-size: 3.9rem; }
+  .content1 .right-nav {
+    width: 40%;
+    float: right; }
+    .content1 .right-nav > div {
+      float: right; }
+  .content1 .social-icons {
+    width: 45%; }
+    .content1 .social-icons img {
+      margin: 0 1.5rem;
+      display: inline-block; }
+      .content1 .social-icons img:first-child {
+        margin-left: 0; }
+      .content1 .social-icons img:last-child {
+        margin-right: 0; }
+  .content1 .signin {
+    width: 55%; }
+
+.main-bg2 {
+  background: white;
+  position: relative; }
+
+.content2 > div {
+  margin: 6% 0 16% 0; }
+.content2 .blurb {
+  width: 33.33%;
+  float: left; }
+  .content2 .blurb img {
+    max-width: 120px;
+    width: 100%; }
+.content2 .calendar, .content2 .team, .content2 .victories {
+  width: 80%;
+  margin: 0 auto; }
+  .content2 .calendar img, .content2 .team img, .content2 .victories img {
+    margin: 0 auto;
+    display: block; }
+  .content2 .calendar p, .content2 .calendar h3, .content2 .team p, .content2 .team h3, .content2 .victories p, .content2 .victories h3 {
+    text-align: center; }
+  .content2 .calendar h3, .content2 .team h3, .content2 .victories h3 {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 0;
+    padding-bottom: 1rem; }
+  .content2 .calendar p, .content2 .team p, .content2 .victories p {
+    font-size: 1.3rem; }
+
+.devices {
+  margin: 6% auto 0 auto;
+  width: 81%; }
+  .devices img:first-child {
+    max-width: 753px;
+    vertical-align: top;
+    margin-right: 7%; }
+  .devices img:last-child {
+    max-width: 200px; }
+
+.content2::before {
+  content: "";
+  position: absolute;
+  left: -43px;
+  width: 50%;
+  height: 48px;
+  top: -48px;
+  background-color: #ffffff;
+  -webkit-transform: skew(40deg);
+  -moz-transform: skew(40deg);
+  -o-transform: skew(40deg);
+  -ms-transform: skew(40deg);
+  transform: skew(60deg); }
+
+.content2::after {
+  content: "";
+  position: absolute;
+  right: -43px;
+  width: 50%;
+  height: 48px;
+  top: -48px;
+  background-color: #ffffff;
+  -webkit-transform: skew(-40deg);
+  -moz-transform: skew(-40deg);
+  -o-transform: skew(-40deg);
+  -ms-transform: skew(-40deg);
+  transform: skew(-60deg); }
+
+.main-bg3 {
+  background: #dfe9e6; }
+
+.content3 {
+  padding: 4% 0 5% 0; }
+  .content3 h3 {
+    color: #be5523;
+    font-size: 2.6rem;
+    font-weight: normal;
+    text-align: center; }
+  .content3 .teams-using {
+    width: 65%;
+    margin: 0 auto; }
+    .content3 .teams-using img {
+      width: 19%;
+      margin-right: 1%;
+      float: left; }
+      .content3 .teams-using img:last-child {
+        margin-right: 0; }
+
+.main-bg4 {
+  background: white; }
+
+.content4 h3 {
+  margin-top: 6%;
+  font-size: 3.8rem;
+  text-align: center;
+  color: #595959;
+  padding-bottom: 3%;
+  border-bottom: 3px solid #2e4d6f; }
+
+.video-wrap, .sign-up {
+  width: 50%;
+  float: left; }
+
+.video-wrap {
+  position: relative;
+  padding-bottom: 32.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin-left: 0.8%; }
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.main-bg5 {
+  background: lightgoldenrodyellow; }
+
+.content5 .featured-events {
+  margin: 0 auto;
+  width: 87%; }
+.content5 .event {
+  float: left;
+  margin-right: 2%;
+  width: 31.33%;
+  position: relative; }
+  .content5 .event:last-child {
+    margin-right: 0; }
+  .content5 .event h4 {
+    color: white;
+    font-size: 2.6rem;
+    background: rgba(46, 77, 111, 0.7);
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 3% 0 4% 4%; }
+  .content5 .event img {
+    display: block; }
+.content5 .button {
+  margin: 4% auto; }
+
+.content6 .teams-looking, .content6 .paddlers-looking {
+  margin: 0 auto; }
+  .content6 .teams-looking img, .content6 .paddlers-looking img {
+    float: left;
+    display: block;
+    border-radius: 50%;
+    margin-right: 1%; }
+    .content6 .teams-looking img:last-child, .content6 .paddlers-looking img:last-child {
+      margin-right: 0; }
+.content6 .teams-looking {
+  max-width: 57.6%; }
+  .content6 .teams-looking img {
+    width: 19%;
+    max-width: 100px; }
+.content6 .paddlers-looking {
+  width: 62%; }
+  .content6 .paddlers-looking img {
+    width: 9%;
+    max-width: 50px; }
