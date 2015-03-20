@@ -160,7 +160,8 @@ h3 {
   color: #be5523; }
 
 .wrapper {
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden; }
 
 .main-bg {
   width: 100%; }
@@ -187,7 +188,8 @@ h3 {
   background-attachment: fixed; }
 
 .content1 {
-  padding: 2.5% 0 6% 0; }
+  padding: 2.5% 0 7% 0;
+  position: relative; }
   .content1 h1 {
     max-width: 355px;
     width: 60%;
@@ -204,7 +206,10 @@ h3 {
     margin: 0.6% auto 0 auto;
     width: 72%;
     text-transform: uppercase;
-    font-size: 3.9rem; }
+    font-size: 3.9rem;
+    position: absolute;
+    bottom: 14%;
+    left: 2%; }
   .content1 .right-nav {
     width: 40%;
     float: right; }
@@ -221,6 +226,21 @@ h3 {
         margin-right: 0; }
   .content1 .signin {
     width: 55%; }
+
+.devices {
+  margin: 4% auto 0 auto;
+  width: 100%; }
+  .devices img {
+    display: block;
+    float: left; }
+    .devices img:first-child {
+      width: 63%;
+      max-width: 753px;
+      vertical-align: top;
+      margin: 9% 9% 0 0; }
+    .devices img:last-child {
+      width: 30%;
+      max-width: 280px; }
 
 .main-bg2 {
   background: white;
@@ -249,16 +269,6 @@ h3 {
     padding-bottom: 1rem; }
   .content2 .calendar p, .content2 .team p, .content2 .victories p {
     font-size: 1.3rem; }
-
-.devices {
-  margin: 6% auto 0 auto;
-  width: 81%; }
-  .devices img:first-child {
-    max-width: 753px;
-    vertical-align: top;
-    margin-right: 7%; }
-  .devices img:last-child {
-    max-width: 200px; }
 
 .content2::before {
   content: "";
@@ -339,7 +349,7 @@ h3 {
   height: 100%; }
 
 .main-bg5 {
-  background: lightgoldenrodyellow; }
+  background: #FAFAD2; }
 
 .content5 .featured-events {
   margin: 0 auto;
