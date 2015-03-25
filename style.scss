@@ -666,7 +666,9 @@ header {
   }
 
   header {
-    position: absolute;
+    h1, .right-nav {
+      position: absolute;
+    }
   }
 
   .devices {

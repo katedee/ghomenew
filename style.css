@@ -734,7 +734,7 @@ label.guCheck {
     width: 88%;
     font-size: 2.4rem; }
 
-  header {
+  header h1, header .right-nav {
     position: absolute; }
 
   .devices {
