@@ -10,16 +10,27 @@ $clay: #be5523;
 $darkblue: #2e4d6f;
 $grey: #595959;
 $lightgrey: #e5e5e5;
-$tan: #FAFAD2;
+$tan: #f5ebdd;
 
 a {
   color: $clay;
   text-decoration: none;
 }
 
+// html,body, .wrapper {
+//   overflow-x: hidden;
+// }
+
 html {
   font-size: 62.5%;
-  height: 100%;
+  height: 10px;
+}
+
+@media (max-width: 900px) {
+  html { font-size: 47%; }
+}
+@media (max-width: 400px) {
+  html { font-size: 56%; }
 }
 
 body {
@@ -47,13 +58,20 @@ h3 {
   margin: 0 3%;
 }
 
+p{
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
 .icon-right-open {
   color: #fff;
 }
 
 .wrapper {
   width: 100%;
-  overflow-x: hidden;
 }
 
 //wrapper
@@ -64,7 +82,7 @@ h3 {
 
 .button {
   height: 38px;  
-  font-size: 1.8rem;
+  font-size: 18px;
   background-color: $clay;
   font-weight: bold;
   text-align: center;
@@ -106,7 +124,7 @@ header {
   }//h1
 
   .right-nav {
-    width: 40%;
+    width: 46%;
     float: right;
     &>div{
       float:right;
@@ -122,7 +140,9 @@ header {
   }
 
   .social-icons {
-    width: 25%;
+    width: 45%;
+    margin-right: 8%;
+    text-align: right;
     img{
       margin: 0 0.8rem;  
       display: inline-block;  
@@ -144,24 +164,21 @@ header {
 }
 
 .content1 {
-  padding: 2.5% 0 7% 0;
+  padding: 2.5% 0 10% 0;
   position: relative;
   h2 {
     color: #fff;
     background: $darkblue;
     padding: 0 6% 0 3.3%;
-    margin: 0.6% auto 0 auto;
-    width: 72%;
+    width: 73%;
     text-transform: uppercase;
-    font-size: 3.9rem;
-    position: absolute;
-    bottom: 14%;
-    left: 2%;
+    font-size: 3.4rem;
+    margin: 0 0 0 3%;
   }
 }//content1
 
 .devices {
-  margin: 4% auto 0 auto;
+  margin: 12% auto 0 auto;
   width: 100%;
   img {
     display: block;
@@ -173,7 +190,7 @@ header {
       margin: 9% 9% 0 0;
     }
     &:last-child {
-      width: 30%;
+      width: 28%;
       max-width: 280px;
     }
   } //img
@@ -182,13 +199,12 @@ header {
 
 .main-bg2{
   background: white;
-  position: relative;
 }
 
 .content2 {
 
   & > div {
-    margin: 6% 0 16% 0;
+    margin: 6% 0 8% 0;
   }
   .blurb {
     width: 33.33%;
@@ -210,45 +226,63 @@ header {
       text-align: center;
     }
     h3 {
-      font-size: 1.4rem;
+      font-size: 2rem;
+      margin: 7% 0;
       border-bottom: 1px solid $lightgrey;
-      margin-bottom: 0;
       padding-bottom: 1rem;
-    }
-    p {
-      font-size: 1.3rem;
     }
   }
 }//content2
 
-
-.content2::before {
-      content: "";
-  position: absolute;
-  left: -43px;
-  width: 50%;
-  height: 48px;
-  top: -48px;
-  background-color: #ffffff;
-  -webkit-transform: skew(40deg);
-  -moz-transform: skew(40deg);
-  -o-transform: skew(40deg);
-  -ms-transform: skew(40deg);
-  transform: skew(60deg);
+.main-bg2, .main-bg6, .main-bg5 {
+  position: relative;
 }
-.content2::after {
-      content: "";
+
+.main-bg2::before, .main-bg6::before, .main-bg5::before {
+  content: "";
   position: absolute;
-  right: -43px;
+  left: 0;
   width: 50%;
   height: 48px;
   top: -48px;
-  background-color: #ffffff;
-  -webkit-transform: skew(-40deg);
-  -moz-transform: skew(-40deg);
-  -o-transform: skew(-40deg);
-  -ms-transform: skew(-40deg);
-  transform: skew(-60deg);
+  background-color: transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 48px solid #fff;
+}
+.main-bg2::after,.main-bg6::after,.main-bg5::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 50%;
+  height: 48px;
+  top: -48px;
+  background-color: transparent;
+  border-left: 90px solid transparent;
+  border-bottom: 48px solid #fff;
+}
+
+.main-bg6::before {
+  background-color: transparent;
+  border-right: 90px solid $tan;
+  border-bottom: 48px solid transparent;
+  top: 0;
+} 
+
+.main-bg6::after{
+  background-color: transparent;
+  border-left: 90px solid $tan;
+  border-bottom: 48px solid transparent;
+  top: 0;
+}
+
+.main-bg5::before {
+  border-right: 90px solid transparent;
+  border-bottom: 48px solid $tan;
+}
+
+.main-bg5::after{
+  border-left: 90px solid transparent;
+  border-bottom: 48px solid $tan;
 }
 
 .main-bg3{
@@ -288,8 +322,10 @@ header {
 }
 
 .content4{
+  padding-bottom: 10%;
+
   h3{
-    margin-top: 6%;
+    margin: 4% 0 3% 0;
     font-size: 3.8rem;
     text-align: center;
     color: $grey;
@@ -299,12 +335,13 @@ header {
 }//content 4
 
 .video-wrap,.sign-wrap {
-  width: 50%;
+  width: 47.50%;
   float: left;
 }
 .video-wrap {
   position: relative;
   padding-bottom: 32.25%; /* 16:9 */
+  margin: 7% 5% 0 0;
   padding-top: 25px;
   height: 0;
 }
@@ -313,6 +350,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  max-width: 450px;
   height: 100%;
 }
 
@@ -322,15 +360,23 @@ header {
 }
 
 .content5 {
+
+  padding: 5% 5% 10% 5%;
+
+  h3 {
+    margin: 0 3% 5% 3%;
+  }
+
   .featured-events {
     margin: 0 auto;
-    width: 87%;
+    width: 97%;
   }
 
   .event{
     float: left;
     margin-right: 2%;
     width: 31.33%;
+    max-width: 300px;
     position: relative;
 
     &:last-child{
@@ -339,7 +385,6 @@ header {
 
     h4 {
       color: white;
-        font-size: 2.6rem;
         background: rgba(46,77,111,0.7);
         position: absolute;
         margin: 0;
@@ -390,20 +435,15 @@ header {
     border-bottom: 3px solid white;
 
     img {
-      width: 19%;
       max-width: 100px;
     }
   }//teams-looking
 
   .paddlers-looking {
+    padding-bottom: 18%;
 
     img{
-      width: 9%;
       max-width: 50px;
-    }
-
-    p {
-      font-size: 2rem;
     }
   }//paddlers-looking
 }//content6
@@ -418,14 +458,13 @@ header {
     float: left;
     margin-right: 6%;
     color: #fff;
-    text-align: center;
     &:last-child {
       margin-right: 0;
     }
     
     h4 {
+      text-align: center;
       color: #fff;
-      font-size: 2.2rem;
       text-transform: uppercase;
       border-bottom: 1px solid white;
       padding-bottom: 5%;
@@ -435,23 +474,33 @@ header {
       display:inline-block;
     }
 
-    p {
+    ul {
+      text-align: left;
       font-size: 1.6rem;
-    }
+
+      li{
+        margin: 4% 0;
+      }
+    }//foot info ul
   }//foot-info
 }//content7
 
 .email-us,.call-us{
   display: table;
-  margin: 0 auto;
+  // margin: 0 auto;
+  float: left;
   height:47px;
   p{
     display: table-cell;
     vertical-align: middle;
-    padding-left: 10%;
+    padding-left: 5%;
     font-weight: bold;
     text-align: left;
   }
+}
+
+.call-us p {
+  padding-left: 11%;
 }
 
 .call-us::before{
@@ -466,10 +515,15 @@ header {
   height: 47px;
 }
 
+.sign-form {
+  width: 100%;
+  max-width: 359px;
+}
 
 .sign-up-body {
   border: 1px solid #ddd;
-  width: 83%;
+  width: 100%;
+  max-width: 359px;
   padding: 8% 0 8% 8%;
   h4{
     font-size: 2rem;
@@ -579,3 +633,133 @@ label.guCheck {
   background-image: url('img/lite-blue-check.png');
 }
 
+
+@media only screen and (min-width: 1100px) {
+
+  // header {
+  //   .social-icons{
+  //     width: 25%;
+  //   }
+  // }
+  .content1 {
+    h2 {
+      position: absolute;
+      bottom: 12%;
+      left: 2%;
+      margin: 0;
+    }
+  }//content1
+}//1100px
+
+@media only screen and (max-width: 800px) {
+  .content1 {
+    h2 {
+      width: 94%;
+    }
+  }
+
+  .video-wrap,.sign-wrap {
+    width: 100%;
+  }
+
+  .video-wrap {
+    padding-bottom: 51.25%;
+
+    iframe{
+      left: calc(50% - 220px);
+    }
+  }
+
+  .sign-form {
+    margin: 8% auto 15% auto;
+  }
+}//860px query
+
+@media only screen and (max-width: 600px){
+
+  header {
+    h1 {
+        max-width: 285px;
+        width: 84px;
+        background: #256a55 url("img/logotext.png") no-repeat -6% center;
+        background-size: 245px auto;
+      }
+
+      .social-icons {
+        width: 85%;
+        margin-top: 3%;
+      }
+  }
+
+  .devices img {
+    margin: 0 auto;
+
+    &:first-child {
+      margin: 14% auto 4% auto;
+    }
+  }
+
+  .content {
+    padding: 5% 1px 10% 1px;
+
+    &.content7 {
+      padding-top: 1px;
+    }
+  }
+
+  .content1{ 
+    padding: 5% 1px 20% 1px;
+
+    h2 {
+      width: 99%;
+      padding: 2%;
+      margin: 0 auto;
+    }
+  }
+  .content6 .paddlers-looking {
+    padding-bottom: 0;
+  }
+
+  .content2 .blurb, .content7 .foot-info {
+      width: 80%;
+      float: none;
+      margin: 8% auto 0 auto;
+      &:last-child {margin-right: auto;}
+  }
+
+  .call-us {
+    margin-right: 15%;
+  }
+
+  .content5 .event {
+    float: none;
+    margin-right: 0;
+    width: 51.33%;
+    min-width: 260px;
+    margin: 4% auto 2% auto;
+    
+    &:last-child{
+      margin-right: auto;
+    }
+  }
+  
+}//600 query
+
+@media only screen and (max-width: 400px){
+  .content1 h2 {
+    width: 88%;
+    font-size: 2.4rem;
+  }
+
+  header {
+    position: absolute;
+  }
+
+  .devices {
+    margin: 20% auto 0 auto;
+  }
+
+  .video-wrap iframe {
+    left: 0;
+  }
+}//400px
