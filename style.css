@@ -201,22 +201,41 @@ h4 {
   padding: 1px 5%; }
 
 header {
-  position: fixed;
   width: 100%;
-  z-index: 1;
-  padding: 1.5% 2% 0 2%; }
+  z-index: 1; }
+  header h1, header .right-nav {
+    position: fixed;
+    z-index: 1;
+    top: 6%; }
   header h1 {
     max-width: 285px;
     width: 60%;
     height: 84px;
     margin: 0;
+    left: 2%;
     background: #256a55 url("img/logotext.png") no-repeat 40% center;
     background-size: 83.5% auto;
     text-indent: -9999px;
-    float: left; }
+    float: left;
+    transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out; }
+    header h1.drumCircle {
+      max-width: 285px;
+      width: 84px;
+      background: #256a55 url("img/logotext.png") no-repeat -6% center;
+      background-size: 245px auto;
+      transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -ms-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      -webkit-transition: all 0.5s ease-out; }
   header .right-nav {
     width: 46%;
-    float: right; }
+    float: right;
+    right: 2%; }
     header .right-nav > div {
       float: right; }
     header .right-nav .button {
@@ -390,6 +409,141 @@ header {
   max-width: 450px;
   height: 100%; }
 
+.sign-up-form {
+  width: 100%;
+  max-width: 359px; }
+
+.sign-up-body {
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 359px;
+  padding: 8% 0 8% 8%; }
+  .sign-up-body h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 10.5% 0 3.5% 0; }
+
+.sign-tab {
+  text-transform: uppercase; }
+  .sign-tab span {
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    position: relative;
+    bottom: -1px;
+    background-color: #fff;
+    font-size: 2.2rem;
+    padding: 2.5% 4% 2% 4%;
+    float: left; }
+    .sign-tab span:last-child {
+      border: 0; }
+
+.sign-in-form {
+  display: none; }
+  .sign-in-form .sign-tab span {
+    border: 0; }
+    .sign-in-form .sign-tab span:last-child {
+      border: 1px solid #ddd;
+      border-bottom: 0; }
+  .sign-in-form form {
+    margin-top: 10%; }
+
+form {
+  font-size: 1.6rem;
+  position: relative; }
+  form p {
+    margin: 1% auto 7% auto;
+    width: 80%;
+    float: left; }
+    form p:last-child {
+      margin: 8% auto 4% auto; }
+  form span {
+    float: left;
+    max-width: 30px;
+    width: 10%;
+    padding-top: 2%;
+    margin-left: 2%; }
+  form span.toolTip:hover {
+    cursor: pointer; }
+    form span.toolTip:hover + .instructions {
+      display: block; }
+  form span.toolTip.passW + .instructions {
+    bottom: 0; }
+  form span.toolTip.lastN + .instructions {
+    top: 42%; }
+  form .instructions {
+    display: none;
+    position: absolute;
+    background: #e4e9ee;
+    width: 84%;
+    left: -5%;
+    border-radius: 5px; }
+    form .instructions:before {
+      top: 10px;
+      bottom: auto;
+      left: auto;
+      right: -25px;
+      border-width: 15px 0 15px 30px;
+      border-color: transparent #e4e9ee;
+      content: "";
+      position: absolute;
+      border-style: solid;
+      display: block;
+      width: 0; }
+    form .instructions p {
+      float: none;
+      margin: 4% auto 6% auto; }
+    form .instructions:hover {
+      display: block; }
+  form input {
+    margin: 1.5% auto;
+    border: 1 px solid #595959;
+    display: block;
+    float: left;
+    width: 80%;
+    padding: 2%; }
+    form input[type=checkbox] {
+      width: 5%;
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0; }
+      form input[type=checkbox]:checked + label.guCheck {
+        background-position: 0 -15px; }
+    form input.button {
+      width: 32%;
+      border: 0;
+      float: right;
+      margin-right: 10%;
+      opacity: 0.5; }
+  form .passWord {
+    width: 80%; }
+  form .strength {
+    height: 5px;
+    margin-right: 1%;
+    width: 24%;
+    border: 1px solid #2e4d6f;
+    float: left; }
+    form .strength:last-child {
+      margin-right: 0; }
+
+label.guCheck {
+  padding-left: 20px;
+  height: 15px;
+  display: inline-block;
+  line-height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  font-size: 15px;
+  vertical-align: middle;
+  cursor: pointer; }
+
+label.guCheck {
+  background-image: url("img/lite-blue-check.png"); }
+
 .main-bg5 {
   background: #f5ebdd; }
 
@@ -469,10 +623,21 @@ header {
     font-size: 1.6rem; }
     .content7 .foot-info ul li {
       margin: 4% 0; }
+.content7 .social-icons {
+  clear: both;
+  margin-top: 12%;
+  display: none; }
+  .content7 .social-icons img {
+    margin: 0 0.8rem;
+    display: inline-block;
+    max-width: 22px; }
+    .content7 .social-icons img:first-child {
+      margin-left: 0; }
+    .content7 .social-icons img:last-child {
+      margin-right: 0; }
 
 .email-us, .call-us {
   display: table;
-  float: left;
   height: 47px; }
   .email-us p, .call-us p {
     display: table-cell;
@@ -494,97 +659,6 @@ header {
   width: 47px;
   height: 47px; }
 
-.sign-form {
-  width: 100%;
-  max-width: 359px; }
-
-.sign-up-body {
-  border: 1px solid #ddd;
-  width: 100%;
-  max-width: 359px;
-  padding: 8% 0 8% 8%; }
-  .sign-up-body h4 {
-    font-size: 2rem;
-    font-weight: normal;
-    margin: 10.5% 0 3.5% 0; }
-
-.sign-tab {
-  text-transform: uppercase; }
-  .sign-tab span {
-    border: 1px solid #ddd;
-    border-bottom: 0;
-    position: relative;
-    bottom: -1px;
-    background-color: #fff;
-    font-size: 2.2rem;
-    padding: 1.5% 4% 0 4%;
-    float: left; }
-    .sign-tab span:last-child {
-      border: 0; }
-
-form {
-  font-size: 1.6rem; }
-  form p {
-    margin: 1% auto 7% auto;
-    width: 80%;
-    float: left; }
-    form p:last-child {
-      margin: 8% auto 4% auto; }
-  form span {
-    float: left;
-    max-width: 30px;
-    width: 10%;
-    padding-top: 2%;
-    margin-left: 2%; }
-  form input {
-    margin: 1.5% auto;
-    border: 1 px solid #595959;
-    display: block;
-    float: left;
-    width: 80%;
-    padding: 2%; }
-    form input[type=checkbox] {
-      width: 5%;
-      position: absolute;
-      overflow: hidden;
-      clip: rect(0 0 0 0);
-      height: 1px;
-      width: 1px;
-      margin: -1px;
-      padding: 0;
-      border: 0; }
-      form input[type=checkbox]:checked + label.guCheck {
-        background-position: 0 -15px; }
-    form input.button {
-      width: 32%;
-      border: 0;
-      float: right;
-      margin-right: 10%; }
-  form .passWord {
-    width: 80%; }
-  form .strength {
-    height: 5px;
-    margin-right: 1%;
-    width: 24%;
-    border: 1px solid #2e4d6f;
-    float: left; }
-    form .strength:last-child {
-      margin-right: 0; }
-
-label.guCheck {
-  padding-left: 20px;
-  height: 15px;
-  display: inline-block;
-  line-height: 15px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  font-size: 15px;
-  vertical-align: middle;
-  cursor: pointer; }
-
-label.guCheck {
-  background-image: url("img/lite-blue-check.png"); }
-
 @media only screen and (min-width: 1100px) {
   .content1 h2 {
     position: absolute;
@@ -603,7 +677,7 @@ label.guCheck {
     .video-wrap iframe {
       left: calc(50% - 220px); }
 
-  .sign-form {
+  .sign-up-form {
     margin: 8% auto 15% auto; } }
 @media only screen and (max-width: 600px) {
   header h1 {
@@ -612,8 +686,7 @@ label.guCheck {
     background: #256a55 url("img/logotext.png") no-repeat -6% center;
     background-size: 245px auto; }
   header .social-icons {
-    width: 85%;
-    margin-top: 3%; }
+    display: none; }
 
   .devices img {
     margin: 0 auto; }
@@ -652,7 +725,10 @@ label.guCheck {
     min-width: 260px;
     margin: 4% auto 2% auto; }
     .content5 .event:last-child {
-      margin-right: auto; } }
+      margin-right: auto; }
+
+  .foot-info .social-icons {
+    display: block; } }
 @media only screen and (max-width: 400px) {
   .content1 h2 {
     width: 88%;

@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <header>
+    <header class="frontHeader">
       <h1>Gushou</h1>
       <div class="right-nav">
 
@@ -66,32 +66,51 @@
         <iframe width="450" height="253" src="https://www.youtube.com/embed/sbCJ39tbbSM" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="sign-wrap">
-      <div class="sign-form">
-          <div class="sign-tab clearfix">
-            <span>Sign Up</span>
-            <span>Sign In</span>
-          </div>
-          <div class="sign-up-body">
-            <img src="img/google.png" alt="">
-            <h4>Register with your email address</h4>
-            <form action="" autocomplete="off" name="gushouSignIn" class="clearfix">
-              <input type="email" name="emailAddress" placeholder="Email Address"><span><img src="img/tooltip.png" alt=""></span>
-              <input type="text" name="firstName" placeholder="First Name">
-              <p><input type="checkbox" name="onlyFirstName" value="only show my first name"><label class="guCheck" for="termsOfService"></label> Only show my first name to others</p>
-              <input type="text" name="lastName" placeholder="Last Name"><span><img src="img/tooltip.png" alt=""></span>
-              <input type="password" name="yourPw" placeholder="Password"><span><img src="img/tooltip.png" alt=""></span>
-              <div class="passWord">
-                <div class="strength"></div>
-                <div class="strength"></div>
-                <div class="strength"></div>
-                <div class="strength"></div>
-              </div>
-              <p><input type="checkbox" id="termsOfService" name="serviceTerms" value="I agree to the Terms of Service"><label class="guCheck" for="termsOfService"></label> I agree to the <a href="">Terms of Service</a></p>
-              <input type="submit" class="button" value="Register">
-            </form>
-          </div>
-        </div><!-- sign-form -->
-      </div>
+        <div class="sign-up-form">
+            <div class="sign-tab clearfix">
+              <span>Sign Up</span>
+              <span><a href="">Sign In</a></span>
+            </div>
+            <div class="sign-up-body">
+              <img src="img/google.png" alt="">
+              <h4>Register with your email address</h4>
+              <form action="" autocomplete="off" name="gushouSignIn" class="clearfix">
+                <input type="email" name="emailAddress" placeholder="Email Address"><span class="toolTip"><img src="img/tooltip.png" alt=""></span>
+                <div class="instructions"><p>This is what you'll use to log-in.</p> <p>It will never be shared with anyone else.</p></div>
+                <input type="text" name="firstName" placeholder="First Name">
+                <p><input type="checkbox" id="firstName" name="onlyFirstName" value="only show my first name"><label class="guCheck" for="firstName"></label> Only show my first name to others</p>
+                <input type="text" name="lastName" placeholder="Last Name"><span class="toolTip lastN"><img src="img/tooltip.png" alt=""></span>
+                <div class="instructions"><p>This is to help identify you to other users. If you prefer, you can choose to only show your first name to other users.</p></div>
+                
+                <input type="password" id="userPw" name="yourPw" placeholder="Password"><span class="toolTip passW"><img src="img/tooltip.png" alt=""></span>
+                <div class="instructions"><p>Good passwords are hard to guess. Use uncommon words or inside jokes, non-standard uPPercasing, creative spelllling, and non-obvious numbers and symbols.</p></div>
+                <div class="passWord">
+                  <div class="strength"></div>
+                  <div class="strength"></div>
+                  <div class="strength"></div>
+                  <div class="strength"></div>
+                </div>
+                <p><input type="checkbox" id="termsOfService" name="serviceTerms" value="I agree to the Terms of Service"><label class="guCheck" for="termsOfService"></label> I agree to the <a href="">Terms of Service</a></p>
+                <input type="submit" class="button" value="Register">
+              </form>
+            </div>
+        </div><!-- sign-up-form -->
+        <div class="sign-in-form">
+            <div class="sign-tab clearfix">
+              <span><a href="">Sign Up</a></span>
+              <span>Sign In</span>
+            </div>
+            <div class="sign-up-body">
+              <img src="img/google.png" alt="">
+              <form action="" autocomplete="off" name="gushouSignIn" class="clearfix">
+                <input type="email" name="emailAddress" placeholder="Email Address">
+                <input type="password" name="yourPw" placeholder="Password">
+                <p><input type="checkbox" id="rememberUser" name="rememberMe" value="remember me"><label class="guCheck" for="rememberUser"></label> Remember me?</p>
+                <input type="submit" class="button" value="Register">
+              </form>
+            </div>
+        </div><!-- sign-up-form -->
+      </div><!-- sign-wrap -->
     </div><!-- content 4 -->
   </div><!-- main-bg4 -->
 
@@ -119,7 +138,7 @@
     <div class="content content6 clearfix">
       <h3>Teams Looking for Paddlers</h3>
       <div class="teams-looking clearfix">
-        <img src="img/user.png" alt="a team">
+        <img src="img/paddlers/thunder.png" alt="a team">
         <img src="img/user.png" alt="a team">
         <img src="img/user.png" alt="a team">
         <img src="img/user.png" alt="a team">
@@ -129,18 +148,18 @@
       </div>
       <h3>Paddlers looking for a team</h3>
       <div class="paddlers-looking clearfix">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
-        <img src="img/user.png" alt="paddler">
+        <img src="img/paddlers/bayly.png" alt="paddler">
+        <img src="img/paddlers/blake.png" alt="paddler">
+        <img src="img/paddlers/chrissy.png" alt="paddler">
+        <img src="img/paddlers/ela.png" alt="paddler">
+        <img src="img/paddlers/kateb.png" alt="paddler">
+        <img src="img/paddlers/kated.png" alt="paddler">
+        <img src="img/paddlers/kyle.png" alt="paddler">
+        <img src="img/paddlers/massie.png" alt="paddler">
+        <img src="img/paddlers/miguel.png" alt="paddler">
+        <img src="img/paddlers/oldershaw.png" alt="paddler">
+        <img src="img/paddlers/salihbegovic.png" alt="paddler">
+        <img src="img/paddlers/steph.png" alt="paddler">
         <!-- <span class="button">View All <span class="icon-right-open"></span></span> -->
       </div>
     </div><!-- content 6 -->
@@ -179,9 +198,16 @@
         <div class="email-us">
           <p>customerservice<br>@gogushou.com</p>
         </div>
+        <div class="social-icons">
+          <img src="img/youtubew.png" alt="Gushou on Youtube">
+          <img src="img/fbw.png" alt="Gushou on Facebook">
+          <img src="img/twitterw.png" alt="Gushou on Twitter">
+        </div>
       </div>
     </div><!-- content 7 -->
   </div><!-- main-bg7 -->
 </div> <!-- wrapper -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
