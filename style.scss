@@ -68,9 +68,7 @@ h4 {
 
 .wrapper {
   width: 100%;
-}
-
-//wrapper
+}//wrapper
 
 .main-bg {
   width: 100%;
@@ -88,18 +86,73 @@ h4 {
   display: block;
   width: 17%;
   margin: 0 auto;
-}
-
-//main-bg
+}//main-bg
 
 .content {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   padding: 1px 5%;
+}//content
+
+
+//* =============================================================================
+//                   Triangle cut outs
+//========================================================================== */
+.main-bg2, .main-bg6, .main-bg5 {
+  position: relative;
 }
 
-//content
+.main-bg2::before, .main-bg6::before, .main-bg5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 48px;
+  top: -48px;
+  background-color: transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 48px solid #fff;
+}
+.main-bg2::after,.main-bg6::after,.main-bg5::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 50%;
+  height: 48px;
+  top: -48px;
+  background-color: transparent;
+  border-left: 90px solid transparent;
+  border-bottom: 48px solid #fff;
+}
+
+.main-bg6::before {
+  background-color: transparent;
+  border-right: 90px solid $tan;
+  border-bottom: 48px solid transparent;
+  top: 0;
+} 
+
+.main-bg6::after{
+  background-color: transparent;
+  border-left: 90px solid $tan;
+  border-bottom: 48px solid transparent;
+  top: 0;
+}
+
+.main-bg5::before {
+  border-right: 90px solid transparent;
+  border-bottom: 48px solid $tan;
+}
+
+.main-bg5::after{
+  border-left: 90px solid transparent;
+  border-bottom: 48px solid $tan;
+}
+
+//* =============================================================================
+//                   Header
+//========================================================================== */
 
 header {
   width: 100%;
@@ -175,7 +228,9 @@ header {
   }//social-icons
 }//header
 
-
+//* =============================================================================
+//                   Content 1 devices imgs
+//========================================================================== */
 .main-bg1,.main-bg6{
   background: -webkit-linear-gradient(rgba(168,195,187,0.5),rgba(46,77,111,0.5)), url('img/greenwave.png');
   background-attachment: fixed;
@@ -215,6 +270,9 @@ header {
 }//devices
 
 
+//* =============================================================================
+//                   Content 2 blurbs
+//========================================================================== */
 .main-bg2{
   background: white;
 }
@@ -252,89 +310,9 @@ header {
   }
 }//content2
 
-.main-bg2, .main-bg6, .main-bg5 {
-  position: relative;
-}
-
-.main-bg2::before, .main-bg6::before, .main-bg5::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 50%;
-  height: 48px;
-  top: -48px;
-  background-color: transparent;
-  border-right: 90px solid transparent;
-  border-bottom: 48px solid #fff;
-}
-.main-bg2::after,.main-bg6::after,.main-bg5::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  width: 50%;
-  height: 48px;
-  top: -48px;
-  background-color: transparent;
-  border-left: 90px solid transparent;
-  border-bottom: 48px solid #fff;
-}
-
-.main-bg6::before {
-  background-color: transparent;
-  border-right: 90px solid $tan;
-  border-bottom: 48px solid transparent;
-  top: 0;
-} 
-
-.main-bg6::after{
-  background-color: transparent;
-  border-left: 90px solid $tan;
-  border-bottom: 48px solid transparent;
-  top: 0;
-}
-
-.main-bg5::before {
-  border-right: 90px solid transparent;
-  border-bottom: 48px solid $tan;
-}
-
-.main-bg5::after{
-  border-left: 90px solid transparent;
-  border-bottom: 48px solid $tan;
-}
-
-.main-bg3{
-  background: $mint;
-}//mainbg3
-
-
-.content3{
-  padding: 4% 0 5% 0;
-
-  h3 {
-    color: $clay;
-    font-size: 2.6rem;
-    font-weight: normal;
-    text-align: center;
-  }
-  .teams-using {
-    width: 65%;
-    margin: 0 auto;
-
-    img {
-      width: 19%;
-      margin-right: 1%;
-      float:left;
-
-      &:last-child{
-        margin-right: 0;
-      }
-    }
-  }//teams-using
-}//content3
-
-//CONTENT 4
-
+//* =============================================================================
+//                   Content 4 video and form
+//========================================================================== */
 .main-bg4 {
   background: white; 
 }
@@ -374,7 +352,10 @@ header {
 
 @import 'signupform';
 
-//CONTENT 5
+
+//* =============================================================================
+//                   Content 5 upcoming events
+//========================================================================== */
 .main-bg5 {
   background: $tan;
 }
@@ -425,6 +406,9 @@ header {
 }//content5
 
 
+//* =============================================================================
+//                   Content 6 teams/paddler looking
+//========================================================================== */
 .content6{
 
   h3 {
@@ -467,6 +451,11 @@ header {
     }
   }//paddlers-looking
 }//content6
+
+
+//* =============================================================================
+//                   Footer
+//========================================================================== */
 
 .main-bg7 {
   background: $darkgreen;
@@ -550,6 +539,11 @@ header {
   height: 47px;
 }
 
+
+
+//* =============================================================================
+//                   Media Queries
+//========================================================================== */
 
 @media only screen and (min-width: 1100px) {
   .content1 {
