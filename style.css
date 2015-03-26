@@ -295,13 +295,9 @@ header {
       margin: 0 0.8rem;
       display: inline-block;
       max-width: 22px; }
-      header .social-icons img:first-child {
-        margin-left: 0; }
-      header .social-icons img:last-child {
-        margin-right: 0; }
 
 .main-bg1, .main-bg6 {
-  background: -webkit-linear-gradient(rgba(168, 195, 187, 0.5), rgba(46, 77, 111, 0.5)), url("img/greenwave.png");
+  background: -webkit-linear-gradient(rgba(168, 195, 187, 0.7) 30%, rgba(46, 77, 111, 0.7)), url("img/greenwave.png");
   background-attachment: fixed; }
 
 .content1 {
@@ -348,9 +344,8 @@ header {
   .content2 .calendar img, .content2 .team img, .content2 .victories img {
     margin: 0 auto;
     display: block; }
-  .content2 .calendar p, .content2 .calendar h3, .content2 .team p, .content2 .team h3, .content2 .victories p, .content2 .victories h3 {
-    text-align: center; }
   .content2 .calendar h3, .content2 .team h3, .content2 .victories h3 {
+    text-align: center;
     font-size: 2rem;
     margin: 7% 0;
     border-bottom: 1px solid #e5e5e5;
@@ -598,11 +593,6 @@ label.guCheck {
     padding-bottom: 5%; }
   .content7 .foot-info img {
     display: inline-block; }
-  .content7 .foot-info ul {
-    text-align: left;
-    font-size: 1.6rem; }
-    .content7 .foot-info ul li {
-      margin: 4% 0; }
 .content7 .social-icons {
   clear: both;
   margin-top: 12%;
@@ -611,10 +601,6 @@ label.guCheck {
     margin: 0 0.8rem;
     display: inline-block;
     max-width: 22px; }
-    .content7 .social-icons img:first-child {
-      margin-left: 0; }
-    .content7 .social-icons img:last-child {
-      margin-right: 0; }
 
 .email-us, .call-us {
   display: table;

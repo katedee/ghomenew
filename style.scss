@@ -218,12 +218,6 @@ header {
       margin: 0 0.8rem;  
       display: inline-block;  
       max-width: 22px;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child{
-        margin-right: 0;
-      }
     }//img
   }//social-icons
 }//header
@@ -232,7 +226,7 @@ header {
 //                   Content 1 devices imgs
 //========================================================================== */
 .main-bg1,.main-bg6{
-  background: -webkit-linear-gradient(rgba(168,195,187,0.5),rgba(46,77,111,0.5)), url('img/greenwave.png');
+  background: -webkit-linear-gradient(rgba(168, 195, 187, 0.7) 30%, rgba(46, 77, 111, 0.7)), url("img/greenwave.png");
   background-attachment: fixed;
 }
 
@@ -298,10 +292,8 @@ header {
       margin: 0 auto;
       display: block;
     }
-    p, h3 {
-      text-align: center;
-    }
     h3 {
+      text-align: center;
       font-size: 2rem;
       margin: 7% 0;
       border-bottom: 1px solid $lightgrey;
@@ -482,15 +474,6 @@ header {
     img {
       display:inline-block;
     }
-
-    ul {
-      text-align: left;
-      font-size: 1.6rem;
-
-      li{
-        margin: 4% 0;
-      }
-    }//foot info ul
   }//foot-info
 
   .social-icons {
@@ -501,12 +484,6 @@ header {
       margin: 0 0.8rem;  
       display: inline-block;  
       max-width: 22px;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child{
-        margin-right: 0;
-      }
     }//img
   }
 }//content7
